@@ -331,7 +331,7 @@ const MyxelliaDashboard: React.FC = () => {
         <div className="md:grid grid-cols-12 gap-6">
           {/* Sales Overview */}
           <div className="col-span-8">
-            <div className="bg-white rounded-3xl border p-6">
+            <div className="bg-white rounded-3xl border border-gray-300 p-6">
               <div className="flex items-start justify-between mb-2">
                 <div>
                   <h2 className="text-xl font-bold text-gray-900">Sales Overview</h2>
@@ -370,7 +370,7 @@ const MyxelliaDashboard: React.FC = () => {
                 <div className="col-span-2 lg:mt-0 mt-6">
                   <div className="grid grid-cols-1 gap-4">
                     {/* Top Row */}
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
                       <MetricCard
                         title="Total Inflow"
                         value="₦120,000,000.00"
