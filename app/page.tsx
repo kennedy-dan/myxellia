@@ -1,5 +1,5 @@
 "use client"
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
 
   Search,
@@ -212,40 +212,40 @@ const SalesChart: React.FC = () => {
 
 const Nav: React.FC = () => {
   return (
-     <div className="md:flex  items-center justify-between w-full md:space-x-8 space-x-0 space-y-6 md:px-0 px-6 md:py-0 py-6 md:space-y-0" >
-              <button className="flex rounded-md items-center space-x-2 text-gray-900 bg-[#F5F5F5] md:px-5 px-4 py-2  font-medium  ">
-                <img src='/images/HomeIcon.png' alt='home-icon' />
-                <span className='font-semibold' >Dashboard</span>
-              </button>
-              <button className="flex items-center space-x-2 text-gray-500 hover:text-gray-900 md:px-5 px-4  ">
-                <img src='/images/Toolbox.png' alt='Toolbox-icon' />
-                <span>Listings</span>
-              </button>
-              <button className="flex items-center space-x-2 text-gray-500 md:px-5 px-4  hover:text-gray-900 ">
-                <img src='/images/Profile.png' alt='Profile-icon' />
-                <span>Users</span>
-              </button>
-              <button className="flex items-center space-x-2 text-gray-500 md:px-5 px-4  hover:text-gray-900 ">
-                <img src='/images/Article.png' alt='Article-icon' />
-                <span>Request</span>
-              </button>
-              <button className="flex items-center space-x-2 text-gray-500 md:px-5 px-4  hover:text-gray-900 ">
-                <img src='/images/Scroll.png' alt='Scroll-icon' />
-                <span>Applications</span>
-              </button>
-              <div className='md:px-5 px-4 ' >
-                <div className="relative ">
-                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
-                  <input
-                    type="text"
-                    placeholder="Search listings, users here..."
-                    className="bg-gray-50 text-gray-900 rounded-lg pl-10 pr-4 py-2 lg:w-80 w-48 focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-200"
-                  />
-                </div>
-              </div>
+    <div className="md:flex  items-center justify-between w-full md:space-x-8 space-x-0 space-y-6 md:px-0 px-6 md:py-0 py-6 md:space-y-0" >
+      <button className="flex rounded-md items-center space-x-2 text-gray-900 bg-[#F5F5F5] md:px-5 px-4 py-2  font-medium  ">
+        <img src='/images/HomeIcon.png' alt='home-icon' />
+        <span className='font-semibold' >Dashboard</span>
+      </button>
+      <button className="flex items-center space-x-2 text-gray-500 hover:text-gray-900 md:px-0 px-4  ">
+        <img src='/images/Toolbox.png' alt='Toolbox-icon' />
+        <span>Listings</span>
+      </button>
+      <button className="flex items-center space-x-2 text-gray-500 md:px-0 px-4  hover:text-gray-900 ">
+        <img src='/images/Profile.png' alt='Profile-icon' />
+        <span>Users</span>
+      </button>
+      <button className="flex items-center space-x-2 text-gray-500 md:px-0 px-4  hover:text-gray-900 ">
+        <img src='/images/Article.png' alt='Article-icon' />
+        <span>Request</span>
+      </button>
+      <button className="flex items-center space-x-2 text-gray-500 md:px-0 px-4  hover:text-gray-900 ">
+        <img src='/images/Scroll.png' alt='Scroll-icon' />
+        <span>Applications</span>
+      </button>
+      <div className='md:px-5 px-4 ' >
+        <div className="relative ">
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+          <input
+            type="text"
+            placeholder="Search listings, users here..."
+            className="bg-gray-50 text-gray-900 rounded-lg pl-10 pr-4 py-2 lg:w-80 w-48 focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-200"
+          />
+        </div>
+      </div>
 
-            </div>
-)
+    </div>
+  )
 }
 
 // Mobile Navigation Menu
@@ -265,9 +265,9 @@ const MobileMenu: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen
             <X className="w-5 h-5" />
           </button>
         </div>
-     <div className="block md:hidden">
-   <Nav />
-</div>
+        <div className="block md:hidden">
+          <Nav />
+        </div>
       </div>
     </div>
   );
@@ -275,11 +275,11 @@ const MobileMenu: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen
 
 // Main Dashboard Component
 const MyxelliaDashboard: React.FC = () => {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-gray-50">
-          {/* Mobile Menu */}
+      {/* Mobile Menu */}
       <MobileMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
 
       {/* Header */}
@@ -295,34 +295,34 @@ const MyxelliaDashboard: React.FC = () => {
             </div>
 
             <div className="flex items-center space-x-4">
-<img 
-  src='/images/Notification.png' 
-  alt='notification' 
-  className="w-4 h-4 sm:w-8 sm:h-8" 
-/>
-<img 
-  src='/images/Budgeting.png' 
-  alt='Budgeting' 
-  className="w-4 h-4 sm:w-8 sm:h-8" 
-/>
-<img 
-  src='/images/Calendar.png' 
-  alt='Calendar' 
-  className="w-4 h-4 sm:w-8 sm:h-8" 
-/>
-<img 
-  src='/images/message-notif.png' 
-  alt='message notification' 
-  className="w-4 h-4 sm:w-8 sm:h-8" 
-/>
+              <img
+                src='/images/Notification.png'
+                alt='notification'
+                className="w-5 h-5 sm:w-8 sm:h-8"
+              />
+              <img
+                src='/images/Budgeting.png'
+                alt='Budgeting'
+                className="w-5 h-5 sm:w-8 sm:h-8"
+              />
+              <img
+                src='/images/Calendar.png'
+                alt='Calendar'
+                className="w-5 h-5 sm:w-8 sm:h-8"
+              />
+              <img
+                src='/images/message-notif.png'
+                alt='message notification'
+                className="w-5 h-5 sm:w-8 sm:h-8"
+              />
               <div className="w-5 h-5 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center">
                 <span className="text-gray-900 font-semibold">D</span>
               </div>
             </div>
 
-             {/* Mobile Menu Button */}
+            {/* Mobile Menu Button */}
             <button
-              className="sm:hidden p-2"
+              className="md:hidden p-2"
               onClick={() => setIsMobileMenuOpen(true)}
             >
               <Menu className="w-6 h-6" />
@@ -331,12 +331,10 @@ const MyxelliaDashboard: React.FC = () => {
         </div>
 
         {/* Bottom White Bar - Navigation and Search */}
-        <div className="bg-white border-b border-gray-200 sm:px-10 px-3 py-4">
-          <div className="hidden md:flex items-center ">
+        <div className="bg-white hidden md:flex border-b border-gray-200 sm:px-10 px-3 py-4">
             <Nav />
 
 
-          </div>
         </div>
       </header>
 
@@ -348,12 +346,12 @@ const MyxelliaDashboard: React.FC = () => {
           {/* Sales Overview */}
           <div className="col-span-8">
             <div className="bg-white rounded-3xl border border-gray-300 p-6">
-              <div className="flex items-start justify-between mb-2">
+              <div className="sm:flex items-start justify-between mb-2">
                 <div>
                   <h2 className="text-xl font-bold text-gray-900">Sales Overview</h2>
                   <p className="text-sm text-gray-500 mt-1">Showing overview Jan 2022 - Sep 2022</p>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center sm:mt-0 mt-4 ">
                   <button className="px-6 py-3 border-[#D6D6D6]  border text-sm font-medium text-gray-700 rounded-3xl hover:bg-gray-200">
                     View Transactions
                   </button>
