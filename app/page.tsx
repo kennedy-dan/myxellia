@@ -76,7 +76,7 @@ const OverviewCard: React.FC<OverviewCardProps> = ({
   image,
   subscribers
 }) => (
-  <div className="bg-white rounded-2xl border overflow-hidden">
+  <div className="bg-white rounded-2xl border border-gray-300 overflow-hidden">
     <div className="flex items-center justify-between px-4 py-3 bg-[#F9FAFB]">
       <div className="flex items-center">
         <div className="w-8 h-8  rounded-lg flex items-center justify-center ">
@@ -285,7 +285,7 @@ const MyxelliaDashboard: React.FC = () => {
       {/* Header */}
       <header>
         {/* Top Dark Bar - Logo and Icons */}
-        <div className="bg-[#191919] text-white px-10 py-6">
+        <div className="bg-[#191919] text-white sm:px-10 px-3 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <div>
@@ -295,11 +295,27 @@ const MyxelliaDashboard: React.FC = () => {
             </div>
 
             <div className="flex items-center space-x-4">
-              <img src='/images/Notification.png' alt='notification' />
-              <img src='/images/Budgeting.png' alt='Budgeting' />
-              <img src='/images/Calendar.png' alt='Calender' />
-              <img src='/images/message-notif.png' alt='message notification' />
-              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+<img 
+  src='/images/Notification.png' 
+  alt='notification' 
+  className="w-3 h-3 sm:w-8 sm:h-8" 
+/>
+<img 
+  src='/images/Budgeting.png' 
+  alt='Budgeting' 
+  className="w-3 h-3 sm:w-8 sm:h-8" 
+/>
+<img 
+  src='/images/Calendar.png' 
+  alt='Calendar' 
+  className="w-3 h-3 sm:w-8 sm:h-8" 
+/>
+<img 
+  src='/images/message-notif.png' 
+  alt='message notification' 
+  className="w-3 h-3 sm:w-8 sm:h-8" 
+/>
+              <div className="w-3 h-3 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center">
                 <span className="text-gray-900 font-semibold">D</span>
               </div>
             </div>
