@@ -298,22 +298,22 @@ const MyxelliaDashboard: React.FC = () => {
 <img 
   src='/images/Notification.png' 
   alt='notification' 
-  className="w-3 h-3 sm:w-8 sm:h-8" 
+  className="w-4 h-4 sm:w-8 sm:h-8" 
 />
 <img 
   src='/images/Budgeting.png' 
   alt='Budgeting' 
-  className="w-3 h-3 sm:w-8 sm:h-8" 
+  className="w-4 h-4 sm:w-8 sm:h-8" 
 />
 <img 
   src='/images/Calendar.png' 
   alt='Calendar' 
-  className="w-3 h-3 sm:w-8 sm:h-8" 
+  className="w-4 h-4 sm:w-8 sm:h-8" 
 />
 <img 
   src='/images/message-notif.png' 
   alt='message notification' 
-  className="w-3 h-3 sm:w-8 sm:h-8" 
+  className="w-4 h-4 sm:w-8 sm:h-8" 
 />
               <div className="w-3 h-3 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center">
                 <span className="text-gray-900 font-semibold">D</span>
@@ -331,7 +331,7 @@ const MyxelliaDashboard: React.FC = () => {
         </div>
 
         {/* Bottom White Bar - Navigation and Search */}
-        <div className="bg-white border-b border-gray-200 px-10 py-4">
+        <div className="bg-white border-b border-gray-200 sm:px-10 px-3 py-4">
           <div className="hidden md:flex items-center ">
             <Nav />
 
@@ -403,7 +403,7 @@ const MyxelliaDashboard: React.FC = () => {
                       />
                     </div>
                     {/* Bottom Row */}
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
                       <MetricCard
                         title="Commission Revenue"
                         value="₦200,000,000.00"
