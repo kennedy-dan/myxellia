@@ -315,7 +315,7 @@ const MyxelliaDashboard: React.FC = () => {
   alt='message notification' 
   className="w-4 h-4 sm:w-8 sm:h-8" 
 />
-              <div className="w-3 h-3 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center">
+              <div className="w-5 h-5 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center">
                 <span className="text-gray-900 font-semibold">D</span>
               </div>
             </div>
