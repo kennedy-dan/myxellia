@@ -341,7 +341,7 @@ const MyxelliaDashboard: React.FC = () => {
       </header>
 
       {/* Main Content */}
-      <main className="p-10">
+      <main className="sm:p-10 p-3">
         <h1 className="text-2xl font-bold text-gray-900 mb-8">Welcome, Ahmed</h1>
 
         <div className="md:grid grid-cols-12 gap-6">
